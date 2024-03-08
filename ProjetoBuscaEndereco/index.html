@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='main.js'></script>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' href='styles.css'>
+	<link rel='stylesheet' type='text/css' href='node_modules/@fortawesome/fontawesome-free/css/all.css'>
 </head>
 <body>
-    <main class="container">
-        <h1>Coinsulta de endereços</h1>
-        <label for="cep"> Digite Cep</label>
-        <input tupe="text" id="cep" >
-        <button>Consultar</button>
-        <div id="resultados">
+	<main class="container">
+		<h1>Consulta de endereços</h1>
+		<label for="cep">Digite Cep:</label><br>
+		<input type="text" id="cep" maxlength="8">
+		<button id="consultar">Consultar</button>
+		<div id="resultados">
 
-        </div>
-    </main>
+		</div>
+	</main>
+
+	<button  id="modo-noturno" class="lampada">
+		<i class="fa-solid fa-lightbulb"></i>
+	</button>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/js-cookie/dist/js.cookie.min.js"></script>
+	<script src="scripts.js"></script>
 </body>
 </html>
